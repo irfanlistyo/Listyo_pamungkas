@@ -1,0 +1,13 @@
+class array
+{
+	public static void main (String []  fob)
+	{		
+		int []arr = {12,4,5,9,11,10,17,20};
+		int i = 0;
+		while (i<arr.length)
+		{
+			System.out.println ("isi array ke ["+ i +"]="+arr[i]);
+			i++;
+		}
+	}
+}
