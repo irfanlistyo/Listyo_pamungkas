@@ -1,0 +1,26 @@
+import java.io.*;
+
+public class Suhu
+{
+	public static void main (String [] fob) throws Exception
+	{
+			BufferedReader br=new BufferedReader (new InputStreamReader(System.in));
+			
+			int suhu ;
+			
+			System.out.print ("Masukkan suhu air sekarang= ");
+			suhu=Integer.parseInt(br.readLine());
+			if (suhu <0 )
+			{
+				System.out.println ("beku");
+			}
+			else if (suhu >=0 &&  suhu <100)
+			{
+				System.out.println ("cair");
+			}
+			else
+			{
+				System.out.println("uap");
+			}
+	}
+}
