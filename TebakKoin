@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class TebakKoin
+{
+	public static void main (String [] fob)
+	{
+		int tebakPC, random, user;
+		Scanner input = new Scanner(System.in);
+		System.out.print("Masukan angka  atau gambar (0 atau 1) : ");
+		user = input.nextInt();
+		random = (int) (Math.random() + 0.5);
+		if (user == 0)
+		{tebakPC = 1;}
+		
+		else 
+		{	tebakPC  = 0;}
+		 
+		System.out.println(" user : "+ user);
+		System.out.println("PC : "+ tebakPC);
+		System.out.println("random : "+ random);
+	}
+}
