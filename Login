@@ -1,0 +1,18 @@
+import java.io.*; 
+public class Login 
+
+{ public static void main (String[]args) throws IOException 
+	{ BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
+	
+	System.out.println("Username & password generator"); 
+	System.out.print("Masukkan nama Depan anda: "); 
+	String fname=br.readLine();
+	System.out.print("Masukkan Nama Belakang : ");
+	String lname=br.readLine(); 
+	System.out.println(); 
+	String uname=fname+lname; 
+	String pass=(fname.charAt(0)+lname.substring(0,2)); 
+	System.out.println("Username anda: "+uname); 
+	System.out.println("Password anda: "+pass); 
+	} 
+}
