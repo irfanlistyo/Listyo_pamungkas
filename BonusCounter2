@@ -1,0 +1,27 @@
+import	java.io.*;
+public class BonusCounter2
+{
+	public static void main (String[]args) throws IOException
+	{
+		BufferedReader br=new BufferedReader (new InputStreamReader(System.in));
+
+		
+		int Harga=12000;
+		
+		System.out.println ("=================================");
+		System.out.println ("========	Sumber Lampu	======");
+		System.out.println ("=================================");
+		System.out.println ("");
+		
+		System.out.println ("Harga lampu perbuah = 12000 ");
+		
+		System.out.print ("Masukkan jumlah lampu yang di beli beli= ");
+		int Jumlah=Integer.parseInt(br.readLine());
+		int Bonus=Jumlah/2;
+		System.out.println ("Anda mendapatkan bonus= "+Bonus);
+		int Total=Jumlah+Bonus;
+		System.out.println ("Jadi anda mendapatkan "+Total+" lampu");
+		int Bayar=Jumlah*Harga;
+		System.out.println ("Yang harus di bayarkan = "+Bayar);
+	}
+}
